@@ -1,0 +1,59 @@
+
+body {
+    font-family:'Times New Roman', Times, serif;
+    color:rgb(20, 21, 66);
+    position: absolute;
+    top: 27%;
+    width: 100%;
+    height:100%;
+    text-align: center;
+    font-size: 18px; 
+    background-image: url('images/backgroundHome.png');
+    /*background-repeat:repeat-x;*/
+    background-attachment: fixed;
+    background-size: 100% contain;
+    
+    
+} 
+.button {
+    
+    color:black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    padding: 15px 30px  ;
+    border-radius: 20px;
+}
+.button:hover {
+    background-color: rgba(47, 9, 85, 0.555);
+    color:white;
+    border-color: black;
+    border:3px;
+}
+
+/* Media Queries */
+
+         /*Mobile  600 px */
+@media  screen and (max-width:930px){
+body {
+    transition-duration: 0.3s;
+    top: 60px;
+    
+}
+    
+}
+
+        /*laptop   992 px */
+@media screen and (min-width:1000px) and (max-width:px) {
+    body{ top:40px;}
+
+}
+
+
+        /*Desktop   1200 up px*/
+@media screen and (min-width:1200px)  {
+    
+}
