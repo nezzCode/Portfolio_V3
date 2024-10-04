@@ -1,0 +1,53 @@
+.container {
+    margin-left: 18rem;;
+}
+.heading {
+    text-align: center;
+    position:relative;
+    background-color: rgba(205, 184, 243, 0.226);
+    margin-left: 14rem;
+    margin-right: 18rem;
+    border-radius:20px;
+    padding: 1px;
+    margin-top: 10px;
+}
+.body {
+    display: grid;
+    place-items: center;
+}
+.gallery {
+    margin-left: 21rem;
+    margin-top: 5rem;
+    position:relative;
+    width:280px;
+    height: 200px;
+    /* code snippet below allows child element to 
+    maintain its 3d position within the scene*/
+    transform-style: preserve-3d;
+    animation:rotate 35s linear infinite;
+}
+    @keyframes rotate{
+        from{
+            transform:perspective(1200px) rotateY(0deg);
+        }
+        to{
+            transform:perspective(1200px) rotateY(360deg);
+        }
+    }
+.gallery span {
+    position: absolute;
+    width:100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*45deg)) translateZ(370px);
+}
+.gallery span img{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.art {
+    margin-top: 7rem;
+}
